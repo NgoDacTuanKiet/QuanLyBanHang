@@ -1,0 +1,121 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 21, 2024, 8:56:39 PM
+    Author     : Ngô Đắc Tuấn Kiệt
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1000;
+}
+
+/* Navigation menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+}
+
+/* Dropdown menu styling */
+nav ul li ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0056b3;
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+}
+
+nav ul li ul li a {
+    padding: 10px;
+    display: block;
+    color: white;
+}
+
+nav ul li ul li a:hover {
+    background-color: #003d80;
+}
+
+/* Show dropdown on hover */
+nav ul li:hover ul {
+    display: block;
+}
+
+/* Icon before each dropdown item */
+nav ul li ul li a:before {
+    content: "📦"; /* Biểu tượng mẫu (có thể thay đổi tùy nhu cầu) */
+    margin-right: 10px;
+}
+
+/* Account dropdown (right side) */
+.account {
+    position: relative;
+}
+
+.account a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.account-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #0056b3;
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+}
+
+.account-dropdown li a {
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+.account-dropdown li a:hover {
+    background-color: #003d80;
+}
+
+.account:hover .account-dropdown {
+    display: block;
+}
